@@ -119,7 +119,7 @@ return (
                 <br></br>
                 <EnvironmentFilled />
                 &nbsp;
-                268 Ly Thuong Kiet, phuong 14 , quan 10, Thanh pho HCM
+                33 Xo Viet Nghe Tinh, Hoa Cuong, Hai Chau, Da nang
 
                 <br></br>
                 <br></br>
@@ -130,7 +130,7 @@ return (
                 <br></br>
                 <PhoneTwoTone />
                 &nbsp;
-                0332 460 567
+                0333 470 567
                 <br></br>
                 <br></br>
                 <ClockCircleTwoTone />
@@ -142,7 +142,7 @@ return (
           </section>
         </div>
         <div className="maps">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.511579557386!2d106.65571311432022!3d10.772074992324471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec3c161a3fb%3A0xef77cd47a1cc691e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBCw6FjaCBraG9hIC0gxJDhuqFpIGjhu41jIFF14buRYyBnaWEgVFAuSENN!5e0!3m2!1svi!2s!4v1680513438326!5m2!1svi!2s" width="100%" height="500" ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.6441591267126!2d108.21872757605657!3d16.032028884642084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314218389cf02c2b%3A0xbdc63233587e2d88!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyDEkMO0bmcgw4E!5e0!3m2!1svi!2s!4v1763544593252!5m2!1svi!2s" width="100%" height="500" ></iframe>
           {/* width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" */}
 
         </div>
@@ -178,7 +178,7 @@ return (
               <img src={avt} />
             </div>
             <div className="info-contact">
-              <h2 >LÊ TRUNG ĐỨC</h2>
+              <h2 >TRỊNH HOÀNG TUẤN KIỆT</h2>
               <h3 style={{ color: 'gray' }}>Software Engineer </h3>
               <h3 style={{ color: 'gray' }}>Phone: +000 123 000 77 88 </h3>
               <h3 style={{ color: 'gray' }}>Email: contact@bookshop.com</h3>
@@ -188,7 +188,7 @@ return (
               <img src={avt} />
             </div>
             <div className="info-contact">
-              <h2>LÊ BÁ DŨNG</h2>
+              <h2>NGUYỄN ĐOÀN TUẤN</h2>
               <h3 style={{ color: 'gray' }}>Software Engineer </h3>
               <h3 style={{ color: 'gray' }}>Phone: +000 123 000 77 88 </h3>
               <h3 style={{ color: 'gray' }}>Email: contact@bookshop.com</h3>
@@ -199,7 +199,7 @@ return (
               <img src={avt} />
             </div>
             <div className="info-contact">
-              <h2 >HOÀNG NHẬT QUÂN</h2>
+              <h2 >LÊ NHO TUẤN</h2>
               <h3 style={{ color: 'gray' }}>Software Engineer </h3>
               <h3 style={{ color: 'gray' }}>Phone: +000 123 000 77 88 </h3>
               <h3 style={{ color: 'gray' }}>Email: contact@bookshop.com</h3>
@@ -211,7 +211,7 @@ return (
               {/* acbbb */}
             </div>
             <div className="info-contact">
-              <h2>ĐẶNG PHÚ QUỐC</h2>
+              <h2>HUỲNH ĐỨC TÀI</h2>
               <h3 style={{ color: 'gray' }}>Software Engineer </h3>
               <h3 style={{ color: 'gray' }}>Phone: +000 123 000 77 88 </h3>
               <h3 style={{ color: 'gray' }}>Email: contact@bookshop.com</h3>

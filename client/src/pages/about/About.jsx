@@ -28,7 +28,7 @@ function About() {
                         <div className="Circle">
                             <img src={admin1} style={{ maxWidth: '100%', maxHeight: '100%', borderRadius: '50%' }} />
                         </div>
-                        <div className="name">LÊ TRUNG ĐỨC</div>
+                        <div className="name">TRỊNH HOÀNG TUẤN KIỆT</div>
 
                         <div className="member_info">
                         Frontend<br></br>Thiết kế và hiện thực giao diện responsive cho các trang và thành phần, đảm bảo trải nghiệm người dùng tối ưu trên mọi thiết bị.
@@ -40,7 +40,7 @@ function About() {
                         <div className="Circle">
                             <img src={admin2} style={{ maxWidth: '150px', height: '150px', borderRadius: '50% ' }} />
                         </div>
-                        <div className="name">LÊ BÁ DŨNG</div>
+                        <div className="name">NGUYỄN ĐOÀN TUẤN</div>
 
                         <div className="member_info">
                             Frontend<br></br>Thiết kế và hiện thực giao diện responsive cho các trang và thành phần, đảm bảo trải nghiệm người dùng tối ưu trên mọi thiết bị.
@@ -52,7 +52,7 @@ function About() {
                         <div className="Circle">
                             <img src={admin3} style={{ width: '150px', height: '150px', borderRadius: '50% 50%' }} />
                         </div>
-                        <div className="name">HOÀNG NHẬT QUÂN</div>
+                        <div className="name">LÊ NHO TUẤN</div>
 
                         <div className="member_info">
                             Front end<br></br>Hiện thực kết nối các API từ backend, hỗ trợ hiện thực giao diện và triển khai các tính năng cho giao diện người dùng.
@@ -64,7 +64,7 @@ function About() {
                         <div className="Circle">
                             <img src={admin4} style={{ maxWidth: '100%', maxHeight: '100%', borderRadius: '50% ' }} />
                         </div>
-                        <div className="name">ĐẶNG PHÚ QUỐC</div>
+                        <div className="name">HUỲNH ĐỨC TÀI</div>
 
                         <div className="member_info">
                             Back end<br></br>Hiện thực các API cho backend và cơ sở dữ liệu, đảm bảo dữ liệu được truy vấn, cập nhật và bảo mật một cách hiệu quả.

@@ -42,7 +42,9 @@ By adding the `PHPMailer` library and configuring the `mailer.php` function, you
 
 1. Clone the repository to your local machine using the command
 ```
-git clone https://github.com/dpquoc/Ecommerce-BookStore
+git clone 1. Clone the repository to your local machine with the command
+   
+   `git clone https://github.com/tuankietjr011/Ecommerce-BookStore`
 ```
 2. Navigate to the root directory of the project and install the dependencies using the command `npm install`
 3. Navigate to the `client` directory and install the dependencies using the command `npm install`
