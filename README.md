@@ -51,11 +51,14 @@ git clone 1. Clone the repository to your local machine with the command
 
 ## Running the Server
 
-To run the server, navigate to the `server` folder and run a local server to serve the folder. You can use tools like XAMPP, WAMP or MAMP for this. If not, navigate to the root directory of the project and run the following command:
+The PHP backend code runs automatically when MAMP/XAMPP's Apache server is active.
 
-```
-php -S localhost:80 -t server
-```
+1.  Place the `server` folder (renamed to `bookstore-api`) inside your MAMP/XAMPP `htdocs` directory.
+2.  Ensure your **Apache** and **MySQL** servers are running (Green status in MAMP).
+3.  The API base URL is configured to access the server via port 8888.
+
+**API Base URL (in apiURL.jsx):**
+* `http://localhost:8888/bookstore-api/api.php/`
 
 **Note:** If you are not using XAMPP, WAMP, or MAMP, and instead have your own MySQL configuration, please make sure to adjust the necessary settings in the project's code to ensure the server runs correctly.
 
