@@ -132,6 +132,8 @@
     width: 40rem;
     background-color: #fff;
     display: none;
+    max-height: 80vh; /* Đặt chiều cao tối đa là 80% chiều cao viewport */
+    overflow-y: auto; /* Cho phép thanh cuộn xuất hiện */
 }
 
 .header .shopping-cart.active {
