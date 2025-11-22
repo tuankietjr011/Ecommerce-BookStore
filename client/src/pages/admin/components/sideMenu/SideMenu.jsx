@@ -30,13 +30,13 @@ export default function SideMenu() {
                 <li className={selected === "dashboard" ? "active" : ""} onClick={() => handleSelect("dashboard")}>
                     <Link to="/admin">
                         <i className='bx bxs-dashboard'></i>
-                        <span className="text">Dashboard</span>
+                        <span className="text">Trang chủ</span>
                     </Link>
                 </li>
                 <li className={selected === "products" ? "active" : ""} onClick={() => handleSelect("products")}>
                     <Link to="/admin/products">
                         <i className='bx bxs-dashboard'></i>
-                        <span className="text">Products</span>
+                        <span className="text">Sản phẩm</span>
                     </Link>
                 </li>
                 <li className={selected === "users" ? "active" : ""} onClick={() => handleSelect("users")}>
@@ -54,13 +54,13 @@ export default function SideMenu() {
                 <li className={selected === "blogs" ? "active" : ""} onClick={() => handleSelect("blogs")}>
                     <Link to="/admin/blogs">
                         <i className='bx bxs-doughnut-chart' ></i>
-                        <span className="text">Blogs</span>
+                        <span className="text">Bài viết</span>
                     </Link>
                 </li>
                 <li className={selected === "contacts" ? "active" : ""} onClick={() => handleSelect("contacts")}>
                     <Link to="/admin/contacts">
                         <i className='bx bxs-message-dots' ></i>
-                        <span className="text">Contacts</span>
+                        <span className="text">Liên hệ</span>
                     </Link>
                 </li>
             </ul>
@@ -70,7 +70,7 @@ export default function SideMenu() {
                 <li>
                     <Link to="#" className="logout" onClick={handleLogout}>
                         <i className='bx bxs-log-out-circle' ></i>
-                        <span className="text">Logout</span>
+                        <span className="text">Đăng xuất</span>
                     </Link>
                 </li>
             </ul>

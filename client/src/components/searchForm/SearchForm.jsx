@@ -12,7 +12,7 @@ function SearchForm() {
                 <input
                     className="search__input"
                     type="text"
-                    placeholder="Search book, author..."
+                    placeholder="Tìm kiếm sách, tác giả..."
                     onChange={(e) => setSearchForm(e.target.value)}
                 />
                 <Link to={`/search/${searchForm}`}  className='btn' ><SearchOutlined /><p>Search</p> </Link>

@@ -44,7 +44,7 @@ function DetailsProduct() {
     const [valueQuantity, setValueQuantity] = useState(1);
 
     const onSubmitReview = async (e) => {
-        if (!user) return alert("Please login to review");
+        if (!user) return alert("Vui lòng đăng nhập để xem");
         e.preventDefault();
         const post = {
             rating: valueRating,
@@ -234,14 +234,14 @@ function DetailsProduct() {
                                 </div>
                                 <div className="product_rating">
                                     <Rating name="read-only" value={avgRating} precision={0.5} size='large' readOnly />
-                                    <span className='number_of_review'>({updatedReview.length} customer review)</span>
+                                    <span className='number_of_review'>({updatedReview.length} Đánh giá)</span>
                                 </div>
                                 <div className="product_intro">
-                                    What can you do to save money with online shopping? You may be wondering if finding coupons and sales is time consuming. If you aren't into that, there are other options. You simply need to heed the tips in this piece and act on them.
+                                    Bạn có thể làm gì để tiết kiệm tiền khi mua sắm trực tuyến? Bạn có thể thắc mắc liệu việc tìm kiếm phiếu giảm giá và chương trình khuyến mãi có tốn thời gian không. Nếu bạn không thích điều đó, vẫn còn những lựa chọn khác. Bạn chỉ cần lưu ý những mẹo trong bài viết này và thực hiện theo..
                                 </div>
                                 <div className="product_buy">
                                     <div className="product_price">${newprice} {productSingle?.on_sale != 0 ? <><span>${productSingle?.price}</span> <p>(-{productSingle?.on_sale}%)</p></> : <></>}</div>
-                                    <div className="number_of_product">{number_of_product} in stock</div>
+                                    <div className="number_of_product">{number_of_product} Trong kho</div>
                                     <div className="quantity_and_button">
                                         <div className="quantity">
                                             <input type="number" name="" min={1} max={number_of_product} onChange={(e) => setValueQuantity(parseInt(e.target.value))} />
@@ -253,7 +253,7 @@ function DetailsProduct() {
                                     </div>
                                 </div>
                                 <div className="product_categories">
-                                    <span>Categories:</span>
+                                    <span>Thể loại:</span>
                                     {listCategory.map((item, index) => (
                                         <div key={index} style={{ display: 'inline' }}>
                                             <Link to={`/category/${item}`}>{item}</Link>
@@ -266,31 +266,31 @@ function DetailsProduct() {
 
                         <div className="product_detail">
                             <div className="book_detail">
-                                <div className="title">Book Details</div>
+                                <div className="title">Chi tiết sách</div>
                                 <table className="book_infor">
                                     <tbody>
                                         <tr>
-                                            <th>Page</th>
-                                            <td>{productSingle?.pages} Page</td>
+                                            <th>Trang</th>
+                                            <td>{productSingle?.pages} Trang</td>
                                         </tr>
 
                                         <tr>
-                                            <th>Cover Design</th>
+                                            <th>Thiết kế bìa</th>
                                             <td>{productSingle?.cover_designer}</td>
                                         </tr>
 
                                         <tr>
-                                            <th>Publisher</th>
+                                            <th>Nhà xuất bản</th>
                                             <td>{productSingle?.publisher}</td>
                                         </tr>
 
                                         <tr>
-                                            <th>Language</th>
+                                            <th>Ngôn ngữ</th>
                                             <td>{productSingle?.lang}</td>
                                         </tr>
 
                                         <tr>
-                                            <th>Released</th>
+                                            <th>Phát hành</th>
                                             <td>{productSingle?.released}</td>
                                         </tr>
                                     </tbody>
@@ -298,7 +298,7 @@ function DetailsProduct() {
                             </div>
 
                             <div className="author">
-                                <div className="title">About the Author</div>
+                                <div className="title">Về tác giả</div>
                                 <div className="author_infor">
                                     <div className="author_name">
                                         {author?.name}
@@ -317,8 +317,8 @@ function DetailsProduct() {
 
                         <div className="description_and_review">
                             <div className="tab_list">
-                                <div className="tab_select" aria-selected="true">Description</div>
-                                <div className="tab_select" aria-selected="false">Reviews</div>
+                                <div className="tab_select" aria-selected="true"> Mô tả</div>
+                                <div className="tab_select" aria-selected="false">Đánh giá</div>
                             </div>
                             <div className="tab_panel_content">
                                 <div className="description_tab_panel">
@@ -326,7 +326,7 @@ function DetailsProduct() {
                                 </div>
 
                                 <div className="reviews_tab_panel">
-                                    <div className="reviews_quantity">{updatedReview?.length} reviews for '{productSingle?.title}'</div>
+                                    <div className="reviews_quantity">{updatedReview?.length} đánh giá cho '{productSingle?.title}'</div>
                                     {updatedReview?.map((review, index) => (
                                         <div className="item_review" key={index}>
                                             <Avatar
@@ -367,8 +367,8 @@ function DetailsProduct() {
                                         onOk={() => handleDeleteReview(selectedDelete)}
                                         onCancel={() => setModal4Open(false)}
                                     >
-                                        <h1><WarningFilled style={{ color: 'red' }} /> Warning </h1>
-                                        <h2>Are you sure you want to delete this review?</h2>
+                                        <h1><WarningFilled style={{ color: 'red' }} /> Cảnh báo </h1>
+                                        <h2>Bạn có chắc chắn muốn xóa đánh giá này không?</h2>
                                     </Modal>
                                     <Modal
                                         centered
@@ -376,10 +376,10 @@ function DetailsProduct() {
                                         onOk={() => handleEditReview(selectedReview)}
                                         onCancel={() => setModal3Open(false)}
                                     >
-                                        <h1>Edit Review</h1>
+                                        <h1>Chỉnh sửa đánh giá</h1>
                                         <Form className='form_content'>
                                             <div className="form_input_row">
-                                                <div className='label'>Your rating *</div>
+                                                <div className='label'>Đánh giá của bạn *</div>
                                                 <Rating
                                                     className='rating'
                                                     name="rating"
@@ -390,7 +390,7 @@ function DetailsProduct() {
                                                 />
                                             </div>
                                             <div className="form_input_row">
-                                                <div className='label'>Your review *</div>
+                                                <div className='label'>Viết đánh giá *</div>
                                                 <textarea
                                                     name="review"
                                                     id=""
@@ -409,17 +409,17 @@ function DetailsProduct() {
                                     <div className="review_add_form">
                                         {updatedReview?.some(item => item.user_id === user?.id) ?
                                             <div className="thanks-for-review">
-                                                <CheckCircleFilled style={{ color: '#22d122' }} /> Thanks for your review !
+                                                <CheckCircleFilled style={{ color: '#22d122' }} /> Cảm ơn đã đánh giá !
                                             </div>
                                             :
                                             <>
                                                 <div className="form_title">
-                                                    <span>Add a review</span>
-                                                    {user ? <>You are only allowed to review once, so please consider carefully !</> : <>Please login before review *</>}
+                                                    <span>Xem thêm đánh giá</span>
+                                                    {user ? <>Bạn chỉ được phép đánh giá một lần, vì vậy hãy cân nhắc kỹ lưỡng !</> : <>Vui lòng đăng nhập trước khi xem xét *</>}
                                                 </div>
                                                 <Form className='form_content'>
                                                     <div className="form_input_row">
-                                                        <div className='label'>Your rating *</div>
+                                                        <div className='label'>Đánh giá của bạn *</div>
                                                         <Rating
                                                             className='rating'
                                                             name="rating"
@@ -431,7 +431,7 @@ function DetailsProduct() {
                                                         />
                                                     </div>
                                                     <div className="form_input_row">
-                                                        <div className='label'>Your review *</div>
+                                                        <div className='label'>Viết đánh giá *</div>
                                                         <textarea
                                                             name="review"
                                                             id=""
@@ -446,7 +446,7 @@ function DetailsProduct() {
                                                     </div>
                                                     <div className="form_input_row">
                                                         <div className=""></div>
-                                                        <button className='submit_review' onClick={onSubmitReview}>Submit</button>
+                                                        <button className='submit_review' onClick={onSubmitReview}>Gửi</button>
                                                     </div>
                                                 </Form>
                                             </>

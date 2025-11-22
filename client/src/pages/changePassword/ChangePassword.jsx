@@ -54,11 +54,11 @@ function ChangePassword() {
     });
     return (
         <div className='change-password'>
-            <h1>Change Password</h1>
+            <h1>Đổi mật khẩu</h1>
             <div className='container-change'>
                 <form className="form-change" onSubmit={formik.handleSubmit}>
                     <div className='setpassword'>
-                        <p >Old password: </p>
+                        <p >Mật khẩu cũ: </p>
                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                             <Input.Password
                                 name="oldpassword"
@@ -76,7 +76,7 @@ function ChangePassword() {
                         </div>
                     </div>
                     <div className='setpassword'>
-                        <p >New password: </p>
+                        <p >Mật khẩu mới: </p>
                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                             <Input.Password
                                 name="newpassword"
@@ -94,7 +94,7 @@ function ChangePassword() {
                         </div>
                     </div>
                     <div className='setpassword'>
-                        <p >Confirm password: </p>
+                        <p >Xác nhận mật khẩu: </p>
                         <div style={{ display: 'flex', flexDirection: 'column' }}>
                             <Input.Password
                                 name="confirm"

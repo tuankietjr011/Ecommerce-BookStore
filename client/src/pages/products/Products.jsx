@@ -28,31 +28,31 @@ import './Products.scss'
 const categorys = [
     {
         id: 1,
-        name: 'Drama'
+        name: 'Kịch'
     },
     {
         id: 2,
-        name: 'Inspiration'
+        name: 'Cảm hứng'
     },
     {
         id: 3,
-        name: 'Life Style'
+        name: 'Phong cách sống'
     },
     {
         id: 4,
-        name: 'Love Story'
+        name: 'Chuyện tình'
     },
     {
         id: 5,
-        name: 'Business'
+        name: 'Kinh doanh'
     },
     {
         id: 6,
-        name: 'Culture'
+        name: 'Văn hóa'
     },
     {
         id: 7,
-        name: 'Science'
+        name: 'Khoa học'
     },
 ]
 import axios from 'axios';
@@ -95,22 +95,22 @@ function Products() {
         <>
             <div className="container-products">
                 <HeroBanner
-                    title="#products"
-                    summary="Vastly selection of books, from bestsellers to hidden gems, all carefully curated to meet your reading needs"
+                    title="#Sản phẩm"
+                    summary="Nhiều lựa chọn sách, từ sách bán chạy nhất đến những cuốn sách quý hiếm, tất cả đều được tuyển chọn cẩn thận để đáp ứng nhu cầu đọc của bạn"
                     srcImg={pageHeaderProduct}
                 />
                 <SearchForm />
                 <div className='main-content'>
                     <Breadcrumbs aria-label="breadcrumb" sx={{ marginLeft: '40px', marginBottom: '30px', fontSize: '1.6rem' }}>
                         <Link underline="hover" color="inherit" href="/">
-                            Home
+                            Trang chủ
                         </Link>
                         <Link
                             underline="hover"
                             href="/material-ui/getting-started/installation/"
                             color="text.primary"
                         >
-                            Products
+                            Sản phẩm
                         </Link>
                     </Breadcrumbs>
                     <div className='sort-content'>
@@ -118,17 +118,17 @@ function Products() {
 
                             <div className='type-products'>
                                 <div className={selected === "all" ? "selected" : ""} onClick={() => handleSelect("all")}>
-                                    All
+                                    Tất cả
                                 </div>
                                 <div className={selected === "sale" ? "selected" : ""} onClick={() => handleSelect("sale")}>
-                                    Sale
+                                    Giảm giá
                                 </div>
                             </div>
                             <p className='text'>
                                 "{listSort.length > 0 ? selected === "sale" ? listSort.filter((card) => (card.onsale > 0)).length : listSort.length
-                                    : selected === "sale" ? products.filter((card) => (card.onsale > 0)).length : products.length} total products"</p>
+                                    : selected === "sale" ? products.filter((card) => (card.onsale > 0)).length : products.length} Tổng số sản phẩm"</p>
                             <div className='sort-price'>
-                                <p>Sort by price: </p>
+                                <p>Sắp xếp theo giá: </p>
                                 <Select
                                     onChange={(value) => setValueSort(value)}
                                     defaultValue={valueSort}
@@ -145,7 +145,7 @@ function Products() {
                         </div>
                         <div className='right-content'>
                             <div className='filter'>
-                                Filter price: ${changeFilter[0]} - ${changeFilter[1]}
+                                Lọc giá: ${changeFilter[0]} - ${changeFilter[1]}
                                 <br /><br />
                                 <Slider range defaultValue={changeFilter} onChange={(e) => setChangeFilter(e)} />
                                 {/* <div className='ResetBtn'>Reset</div> */}

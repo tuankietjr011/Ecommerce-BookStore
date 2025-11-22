@@ -12,10 +12,10 @@ function Footer() {
                     <div className='style-border-top'></div>
                     <div className='style-border-bottom'></div>
                     <h3 className='tilte'>Book<span className='color-orange highlight'>S</span></h3>
-                    <p>"The more that you read, the more things you will know. The more that you learn, the more places you'll go"</p>
+                    <p>"Càng đọc nhiều, bạn càng biết nhiều điều. Càng học nhiều, bạn càng được đi nhiều nơi."</p>
                 </div>
                 <div className="box">
-                    <h3>Contact Us</h3>
+                    <h3>Liên hệ chúng tôi</h3>
                     <div className='box-contact'><PhoneFilled className='color-orange icons-g' /><p>Hotline: 1999-1010</p></div>
                     <div className='box-contact'><MailFilled className='color-orange icons-g' /><p>Mail: books@gmail.com</p></div>
                     <div className='icons-contact'>
@@ -26,17 +26,17 @@ function Footer() {
 
                 </div>
                 <div className="box box-img">
-                    <h3>International Delivery</h3>
+                    <h3>Giao hàng quốc tế</h3>
                     <img src={map} alt="" />
                 </div>
                 <div className="box box-links">
-                    <h3>Quick Links</h3>
-                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Home</Link></div>
-                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Product</Link></div>
-                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Blogs</Link></div>
-                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>About</Link></div>
-                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Contact</Link></div>
-                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Checkout</Link></div>
+                    <h3>Liên kết nhanh</h3>
+                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Trang chủ</Link></div>
+                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Sản phẩm</Link></div>
+                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Bài viết</Link></div>
+                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Về chúng tôi</Link></div>
+                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Liên hệ</Link></div>
+                    <div className='link-items'><CaretRightOutlined className='color-orange' /><Link className='links' to=''>Thanh toán</Link></div>
                 </div>
             </div>
         </footer>

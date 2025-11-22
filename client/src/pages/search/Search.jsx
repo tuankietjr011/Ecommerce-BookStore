@@ -31,31 +31,31 @@ import './Search.scss'
 const categorys = [
     {
         id: 1,
-        name: 'Drama'
+        name: 'Kịch'
     },
     {
         id: 2,
-        name: 'Inspiration'
+        name: 'Cảm hứng'
     },
     {
         id: 3,
-        name: 'Life Style'
+        name: 'Phong cách sống'
     },
     {
         id: 4,
-        name: 'Love Story'
+        name: 'Chuyện tình'
     },
     {
         id: 5,
-        name: 'Business'
+        name: 'Kinh doanh'
     },
     {
         id: 6,
-        name: 'Culture'
+        name: 'Văn hóa'
     },
     {
         id: 7,
-        name: 'Science'
+        name: 'Khoa học'
     },
 ]
 
@@ -124,15 +124,15 @@ function Search() {
         <>
             <div className="container-products">
                 <HeroBanner
-                    title="#search"
-                    summary="A place where you can find the books you need!"
+                    title="#tìm kiếm"
+                    summary="Nơi bạn có thể tìm thấy những cuốn sách bạn cần!"
                     srcImg={pageHeaderProduct}
                 />
                 <SearchForm />
                 <div className='main-content'>
                     <Breadcrumbs aria-label="breadcrumb" sx={{ marginLeft: '40px', marginBottom: '30px', fontSize: '1.6rem' }}>
                         <Link underline="hover" color="inherit" href="/">
-                            Home
+                            Trang chủ
                         </Link>
                         <Link
                             underline="hover"
@@ -140,14 +140,14 @@ function Search() {
                             color="inherit"
 
                         >
-                            Products
+                            Sản phẩm
                         </Link>
                         <Link
                             underline="hover"
                             href={`/search/${searchForm}`}
                             color="text.primary"
                         >
-                            Search
+                            Tìm kiếm
                         </Link>
                     </Breadcrumbs>
                     <div className='sort-content'>
@@ -155,30 +155,30 @@ function Search() {
 
                             <div className='type-products'>
                                 <div className={selected === "all" ? "selected" : ""} onClick={() => handleSelect("all")}>
-                                    All
+                                    Tất cả
                                 </div>
                                 <div className={selected === "sale" ? "selected" : ""} onClick={() => handleSelect("sale")}>
-                                    Sale
+                                    Giảm giá
                                 </div>
                             </div>
-                            <p className='text'>"The search for '{searchForm}' returned {selected === "sale" ? listSearch?.filter((card) => (card.onsale > 0))?.length : listSearch.length} products"</p>
+                            <p className='text'>"tìm kiếm '{searchForm}' đã trả về {selected === "sale" ? listSearch?.filter((card) => (card.onsale > 0))?.length : listSearch.length} sản phẩm"</p>
                             <div className='sort-price'>
-                                <p>Sort by price: </p>
+                                <p>Sắp xếp theo giá: </p>
                                 <Select
                                     onChange={(value) => setValueSort(value)}
                                     defaultValue={valueSort}
                                     style={{ width: 120 }}
                                     options={[
-                                        { value: 0, label: 'None' },
-                                        { value: 1, label: 'Increase' },
-                                        { value: 2, label: 'Decrease' }
+                                        { value: 0, label: 'Không' },
+                                        { value: 1, label: 'Tăng' },
+                                        { value: 2, label: 'Giảm' }
                                     ]}
                                 />
                             </div>
                         </div>
                         <div className='right-content'>
                             <div className='filter'>
-                                Filter price: ${changeFilter[0]} - ${changeFilter[1]}
+                                Lọc giá: ${changeFilter[0]} - ${changeFilter[1]}
                                 <br /><br />
                                 <Slider range defaultValue={changeFilter} onChange={(e) => setChangeFilter(e)} />
                                 {/* <div className='ResetBtn'>Reset</div> */}

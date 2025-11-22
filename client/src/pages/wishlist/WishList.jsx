@@ -29,31 +29,31 @@ import './Wishlist.scss'
 const categorys = [
     {
         id: 1,
-        name: 'Drama'
+        name: 'Kịch'
     },
     {
         id: 2,
-        name: 'Inspiration'
+        name: 'Cảm hứng'
     },
     {
         id: 3,
-        name: 'Life Style'
+        name: 'Phong cách sống'
     },
     {
         id: 4,
-        name: 'Love Story'
+        name: 'Chuyện tình'
     },
     {
         id: 5,
-        name: 'Business'
+        name: 'Kinh doanh'
     },
     {
         id: 6,
-        name: 'Culture'
+        name: 'Văn hoá'
     },
     {
         id: 7,
-        name: 'Science'
+        name: 'Khoa học'
     },
 ]
 
@@ -96,29 +96,29 @@ function WishList() {
         <>
             <div className="container-products">
                 <HeroBanner
-                    title="#wishlist"
-                    summary="A place where you can find the books you need!"
+                    title="#Yêu thích"
+                    summary="Nơi bạn có thể tìm thấy những cuốn sách bạn cần!"
                     srcImg={pageHeaderProduct}
                 />
                 <SearchForm />
                 <div className='main-content'>
                     <Breadcrumbs aria-label="breadcrumb" sx={{ marginLeft: '40px', marginBottom: '30px', fontSize: '1.6rem' }}>
                         <Link underline="hover" color="inherit" href="/">
-                            Home
+                            Trang chủ
                         </Link>
                         <Link
                             underline="hover"
                             href="/products"
                             color="inherit"
                         >
-                            Products
+                            Sản phẩm
                         </Link>
                         <Link
                             underline="hover"
                             href="/wishlist"
                             color="text.primary"
                         >
-                            Wishlist
+                            Yêu thích
                         </Link>
                     </Breadcrumbs>
                     <div className='sort-content'>
@@ -126,13 +126,13 @@ function WishList() {
 
                             <div className='type-products'>
                                 <div className={selected === "all" ? "selected" : ""} onClick={() => handleSelect("all")}>
-                                    All
+                                    Tất cả
                                 </div>
                                 <div className={selected === "sale" ? "selected" : ""} onClick={() => handleSelect("sale")}>
-                                    Sale
+                                    Giảm giá
                                 </div>
                             </div>
-                            <p className='text'>"{selected === "sale" ? filteredProducts.filter((card) => (card.onsale > 0)).length : filteredProducts.length} total products liked"</p>
+                            <p className='text'>"{selected === "sale" ? filteredProducts.filter((card) => (card.onsale > 0)).length : filteredProducts.length} Tổng số sản phẩm thích"</p>
                             
                         </div>
                         <div className='right-content'>

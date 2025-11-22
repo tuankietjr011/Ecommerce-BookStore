@@ -221,7 +221,7 @@ export default function Profile() {
             <div className="infor">
               <div className="infor_content">
                 <span>{userCurrent.fullname}</span><br></br>
-                Age: {age}
+                Tuổi: {age}
               </div>
             </div>
 
@@ -230,7 +230,7 @@ export default function Profile() {
               aria-selected="true"
               onClick={HandleClick1}
             >
-              PROFILE SETTING
+              Cài đặt hồ sơ
             </button>
 
             <button
@@ -238,7 +238,7 @@ export default function Profile() {
               aria-selected="false"
               onClick={HandleClick2}
             >
-              ORDER LIST
+              Danh sách đặt hàng
             </button>
 
           </div>
@@ -248,19 +248,19 @@ export default function Profile() {
 
           <div className="Update_form">
             <div className="lable_text">
-              <label htmlFor="">USERNAME</label>
+              <label htmlFor="">Tên đăng nhập</label>
               <input type="text" defaultValue={username} readOnly onChange={(e) => setUsername(e.target.value)} />
             </div>
             <div className="lable_text">
-              <label htmlFor="">EMAIL ADDRESS</label>
+              <label htmlFor="">EMAIL</label>
               <input type="text" defaultValue={email} readOnly onChange={(e) => setEmail(e.target.value)} />
             </div>
             <div className="lable_text">
-              <label htmlFor="">FULL NAME</label>
+              <label htmlFor="">Họ và tên</label>
               <input type="text" defaultValue={fullname} onChange={(e) => setFullname(e.target.value)} />
             </div>
             <div className="lable_text">
-              <label htmlFor="">BIRTHDAY</label>
+              <label htmlFor="">Sinh nhật</label>
               <input type="date" defaultValue={bday} onChange={(e) => setBday(e.target.value)} />
             </div>
             {/* <div className="lable_text">
@@ -271,7 +271,7 @@ export default function Profile() {
               <label htmlFor="">CONFIRM PASSWORD</label>
               <input type="text" />
             </div> */}
-            <button className='update_button' onClick={handleUpdate}>UPDATE PROFILE</button>
+            <button className='update_button' onClick={handleUpdate}>Cập nhật hồ sơ</button>
           </div>
 
           <div className="order_list_content">
@@ -279,10 +279,10 @@ export default function Profile() {
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>STATUS</th>
-                  <th>ITEMS</th>
-                  <th>DATE</th>
-                  <th>TOTAL</th>
+                  <th>Trạng thái</th>
+                  <th>Mặt hàng</th>
+                  <th>Ngày đặt</th>
+                  <th>Tổng cộng</th>
                 </tr>
               </thead>
               <tbody>
@@ -292,7 +292,7 @@ export default function Profile() {
                       {index + 1}
                     </td>
                     <td>{order.status}</td>
-                    <td className='link-items' onClick={() => { setSelectedOrder(order); setModalOpen(true); }}>See</td>
+                    <td className='link-items' onClick={() => { setSelectedOrder(order); setModalOpen(true); }}>Xem</td>
                     <td>{order.created_at}</td>
                     <td>${order.price}</td>
                     <Modal

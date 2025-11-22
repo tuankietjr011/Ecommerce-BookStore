@@ -7,7 +7,7 @@ export default function Sidebar(props) {
     return (
 
         <div className='categorys'>
-            <h2 className='title-category'>Category</h2>
+            <h2 className='title-category'>Thể loại</h2>
             <div className='list-categorys'>
                 {
                     categorys.map((category) => {

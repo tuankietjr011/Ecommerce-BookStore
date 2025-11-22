@@ -16,8 +16,8 @@ function About() {
                     <img src={BannerBg} className="img-bg" alt="" />
                     <div className="Img"><img src={Teamwork} alt="" /></div>
                     <div className="Introduce">
-                        <span>ABOUT US</span>
-                        <p>Our bookshop was established at beginning of 2023 by four enthusiastic, talent person. The general mission is to provide you with an alternative haven to buy the books you love for the approriate prices. We offer over 10 million books and provide free delivery to over 100 countries.</p>
+                        <span>Về chúng tôi</span>
+                        <p>Nhà sách của chúng tôi được thành lập vào đầu năm 2025 bởi bốn người trẻ đầy nhiệt huyết và tài năng. Sứ mệnh chung là mang đến cho bạn một thiên đường mua sắm lý tưởng với mức giá hợp lý. Chúng tôi cung cấp hơn 10 triệu đầu sách và miễn phí giao hàng đến hơn 100 quốc gia.</p>
                     </div>
                 </div>
 

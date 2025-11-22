@@ -18,13 +18,13 @@ import { Autoplay, Pagination, Navigation } from 'swiper';
 
 const dataBanner = [
     {
-        title: 'Diverse books',
-        content: 'The bookshop is a cozy haven for book lovers',
+        title: 'Sách đa dạng',
+        content: 'Hiệu sách là thiên đường ấm cúng cho những người yêu sách',
         srcImg: Reading
     },
     {
-        title: 'Enormous clients',
-        content: 'Over 10000 accounts was created in 2022 ',
+        title: 'Khách hàng khủng',
+        content: 'Hơn 10000 tài khoản đã được tạo vào năm 2025 ',
         srcImg: Searching
     },
 ]

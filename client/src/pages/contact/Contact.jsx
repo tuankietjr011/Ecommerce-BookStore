@@ -100,8 +100,8 @@ return (
   <>
     <div className="container-contact">
       <HeroBanner
-        title="#contact"
-        summary="Brings you news about books and authors along with our picks for great reads!"
+        title="#liên hệ"
+        summary="Mang đến cho bạn tin tức về sách và tác giả cùng với những lựa chọn tuyệt vời của chúng tôi!"
         srcImg={pageHeaderProduct}
       />
 
@@ -109,17 +109,17 @@ return (
         <div className="info">
           <section >
             <div >
-              <h1 style={{fontSize: '2.2em'}}>GET IN TOUCH</h1>
+              <h1 style={{fontSize: '2.2em'}}>LIÊN HỆ</h1>
               <br></br>
-              <h1 style={{ fontSize: '270%' }}>Visit one of our agency location or contact us today</h1>
+              <h1 style={{ fontSize: '270%' }}>Ghé thăm một trong các đại lý của chúng tôi hoặc liên hệ với chúng tôi ngay hôm nay</h1>
               <br></br>
-              <h3 style={{ fontSize: '170%' }}>Head Office</h3>
+              <h3 style={{ fontSize: '170%' }}>Trụ sở chính</h3>
               <br></br>
               <div style={{ fontSize: '200%' }}>
                 <br></br>
                 <EnvironmentFilled />
                 &nbsp;
-                33 Xo Viet Nghe Tinh, Hoa Cuong, Hai Chau, Da nang
+                33 Xô Viết Nghệ Tĩnh, Hoà Cường, Hải Châu, Đà Nẵng
 
                 <br></br>
                 <br></br>
@@ -135,7 +135,7 @@ return (
                 <br></br>
                 <ClockCircleTwoTone />
                 &nbsp;
-                Monday to Friday: 8.00 AM to 16.00 PM
+                Thứ Hai đến Thứ Sáu: 8:00 sáng đến 16:00 chiều
               </div>
             </div>
 
@@ -151,25 +151,25 @@ return (
 
         <div className="form1">
 
-          <h1 style={{ fontSize: '250%' }}>We love to hear from you</h1>
+          <h1 style={{ fontSize: '250%' }}>Chúng tôi rất mong nhận được phản hồi từ bạn</h1>
 
           <br></br>
           <br></br>
           <br></br>
           <Form {...layout} name="nest-messages" onFinish={onFinish} style={{ maxWidth: 600 }} validateMessages={validateMessages}>
-            <input type="text" placeholder="Your Name" onChange={(e) => setFullname(e.target.value)} />
+            <input type="text" placeholder="Tên của bạn" onChange={(e) => setFullname(e.target.value)} />
             <br></br>
             <br></br>
             <input type="text" placeholder="E-mail" onChange={(e) => setEmail(e.target.value)} />
             <br></br>
             <br></br>
-            <input type="text" placeholder="Title" onChange={(e) => setTitle(e.target.value)} />
+            <input type="text" placeholder="Tiêu đề" onChange={(e) => setTitle(e.target.value)} />
             <br></br>
             <br></br>
-            <textarea cols="300" rows="10" placeholder="Your Message" onChange={(e) => setMessage(e.target.value)}></textarea>
+            <textarea cols="300" rows="10" placeholder="Nội dung" onChange={(e) => setMessage(e.target.value)}></textarea>
             <br></br>
             <br></br>
-            <button className="normal" onClick={handleSend} >Submit</button>
+            <button className="normal" onClick={handleSend} >Gửi</button>
           </Form>
         </div>
         <div className="contacts">

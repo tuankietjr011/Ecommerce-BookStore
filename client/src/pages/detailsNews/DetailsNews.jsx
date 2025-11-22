@@ -31,8 +31,8 @@ function DetailsNews() {
         <>
             <div className="container-detailNews">
                 <HeroBanner
-                    title="#news"
-                    summary="Brings you news about books and authors along with our picks for great reads!"
+                    title="#Sách mới"
+                    summary="Mang đến cho bạn tin tức về sách và tác giả cùng với những lựa chọn tuyệt vời của chúng tôi!"
                     srcImg={pageHeaderProduct}
                 />
                 <div className="details-news-container">

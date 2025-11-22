@@ -10,7 +10,7 @@ const initialState = {
 }
 
 const productSlice = createSlice({
-    name: "product",
+    name: "Sản phẩm",
     initialState,
     reducers: {
         clearProductSingle: (state, action) => {

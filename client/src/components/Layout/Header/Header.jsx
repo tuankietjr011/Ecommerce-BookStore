@@ -88,11 +88,11 @@ function Header() {
                 Book<span>S</span>
             </h1>
             <nav className="navbar">
-                <Link className='links-nav' to="/">Home</Link>
-                <Link className='links-nav' to="/products">Products</Link>
-                <Link className='links-nav' to="/news">News</Link>
-                <Link className='links-nav' to="/about">About</Link>
-                <Link className='links-nav' to="/contact">Contact</Link>
+                <Link className='links-nav' to="/">Trang Chủ</Link>
+                <Link className='links-nav' to="/products">Sản phẩm</Link>
+                <Link className='links-nav' to="/news">Mới</Link>
+                <Link className='links-nav' to="/about">Về chúng tôi</Link>
+                <Link className='links-nav' to="/contact">Liên hệ</Link>
 
             </nav>
             <div className='icons'>
@@ -174,7 +174,7 @@ function Header() {
                                             <ListItemIcon>
                                                 <SettingsIcon />
                                             </ListItemIcon>
-                                            Admin page
+                                            Trang quản trị viên
                                         </MenuItem>
                                     </Link>
                                 )}
@@ -183,7 +183,7 @@ function Header() {
                                         <ListItemIcon>
                                             <FavoriteIcon />
                                         </ListItemIcon>
-                                        WishList
+                                        Danh sách yêu thích
                                     </MenuItem>
                                 </Link>
                                 <Link to='/changepassword'>
@@ -191,14 +191,14 @@ function Header() {
                                         <ListItemIcon>
                                             <LockResetOutlinedIcon style={{ fontSize: '1.5rem' }} />
                                         </ListItemIcon>
-                                        Change password
+                                        Đổi mật khẩu
                                     </MenuItem>
                                 </Link>
                                 <MenuItem onClick={handleLogout} sx={{ fontSize: '1.5rem' }}>
                                     <ListItemIcon>
                                         <LogoutIcon />
                                     </ListItemIcon>
-                                    Logout
+                                    Đăng xuất
                                 </MenuItem>
 
                             </Menu>
@@ -231,8 +231,8 @@ function Header() {
                         totalPrice={item.totalPrice}
                     />
                 ))}
-                <div className='total'> Total : ${amountTotal}</div>
-                <div href="#" className='btn' onClick={handleCheckout} >Go to Checkout page</div>
+                <div className='total'> Giá : ${amountTotal}</div>
+                <div href="#" className='btn' onClick={handleCheckout} >Đi đến trang thanh toán</div>
             </div>
         </div>
     );

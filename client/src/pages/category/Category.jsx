@@ -30,31 +30,31 @@ import {
 const categorys = [
     {
         id: 1,
-        name: 'Drama'
+        name: 'Kịch'
     },
     {
         id: 2,
-        name: 'Inspiration'
+        name: 'Cảm hứng'
     },
     {
         id: 3,
-        name: 'Life Style'
+        name: 'Phong cách sống'
     },
     {
         id: 4,
-        name: 'Love Story'
+        name: 'Chuyện tình'
     },
     {
         id: 5,
-        name: 'Business'
+        name: 'Kinh doanh'
     },
     {
         id: 6,
-        name: 'Culture'
+        name: 'Văn hóa'
     },
     {
         id: 7,
-        name: 'Science'
+        name: 'Khoa học'
     },
 ]
 
@@ -93,22 +93,22 @@ function Category() {
         <>
             <div className="container-products">
                 <HeroBanner
-                    title="#category"
-                    summary="A place where you can find the books you need!"
+                    title="#Loại sách"
+                    summary="Nơi bạn có thể tìm thấy những cuốn sách bạn cần!"
                     srcImg={pageHeaderProduct}
                 />
                 <SearchForm />
                 <div className='main-content'>
                     <Breadcrumbs aria-label="breadcrumb" sx={{ marginLeft: '40px', marginBottom: '30px', fontSize: '1.6rem' }}>
                         <Link underline="hover" color="inherit" href="/">
-                            Home
+                            Trang chủ
                         </Link>
                         <Link
                             underline="hover"
                             href={`/category/${category}`}
                             color="text.primary"
                         >
-                            Category: {category}
+                            Loại: {category}
                         </Link>
                     </Breadcrumbs>
                     <div className='sort-content'>
@@ -116,15 +116,15 @@ function Category() {
 
                             <div className='type-products'>
                                 <div className={selected === "all" ? "selected" : ""} onClick={() => handleSelect("all")}>
-                                    All
+                                    Tất cả
                                 </div>
                                 <div className={selected === "sale" ? "selected" : ""} onClick={() => handleSelect("sale")}>
-                                    Sale
+                                    Giảm giá
                                 </div>
                             </div>
                             <p className='text'>"{selected === "sale" ? listCategory?.filter((card) => (card.onsale > 0))?.length : listCategory.length} total products"</p>
                             <div className='sort-price'>
-                                <p>Sort by price: </p>
+                                <p>Sắp xếp theo giá: </p>
                                 <Select
                                     onChange={(value) => setValueSort(value)}
                                     defaultValue={valueSort}
@@ -139,7 +139,7 @@ function Category() {
                         </div>
                         <div className='right-content'>
                             <div className='filter'>
-                                Filter price: ${changeFilter[0]} - ${changeFilter[1]}
+                                Lọc giá: ${changeFilter[0]} - ${changeFilter[1]}
                                 <br /><br />
                                 <Slider range defaultValue={changeFilter} onChange={(e) => setChangeFilter(e)} />
                                 {/* <div className='ResetBtn'>Reset</div> */}

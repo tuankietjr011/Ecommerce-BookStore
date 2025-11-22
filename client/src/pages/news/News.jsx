@@ -47,21 +47,21 @@ function News() {
         <>
             <div className="container-news">
                 <HeroBanner
-                    title="#news"
-                    summary="Brings you news about books and authors along with our picks for great reads!"
+                    title="#mới"
+                    summary="Mang đến cho bạn tin tức về sách và tác giả cùng với những lựa chọn tuyệt vời của chúng tôi!"
                     srcImg={pageHeaderProduct}
                 />
 
                 <Breadcrumbs aria-label="breadcrumb" sx={{ marginLeft: '40px', marginBottom: '30px', fontSize: '1.6rem',marginTop: '40px' }}>
                     <Link underline="hover" color="inherit" href="/">
-                        Home
+                        Trang chủ
                     </Link>
                     <Link
                         underline="hover"
                         href="/material-ui/getting-started/installation/"
                         color="text.primary"
                     >
-                        News
+                        Mới nhất
                     </Link>
                 </Breadcrumbs>
                 <div className='news-main-content'>
