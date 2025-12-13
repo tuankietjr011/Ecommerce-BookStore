@@ -1,11 +1,20 @@
 import './SearchForm.scss'
-import { Select, Input } from 'antd';
 import { SearchOutlined } from '@ant-design/icons'
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
 import React, { useState } from 'react';
 
 function SearchForm() {
-    const [searchForm, setSearchForm] = useState("");
+    const [inputData, setInputData] = useState(""); 
+    const navigate = useNavigate(); 
+
+    
+    const handleSearch = () => {
+        
+        if (inputData.trim() !== "") {
+            navigate(`/search/${inputData}`);
+        }
+    }
+
     return (
         <>
             <div className='search-form'>
@@ -13,13 +22,24 @@ function SearchForm() {
                     className="search__input"
                     type="text"
                     placeholder="Tìm kiếm sách, tác giả..."
-                    onChange={(e) => setSearchForm(e.target.value)}
+                    value={inputData}
+                    onChange={(e) => setInputData(e.target.value)}
+                    onKeyDown={(e) => {
+                        if (e.key === 'Enter') handleSearch();
+                    }}
                 />
-                <Link to={`/search/${searchForm}`}  className='btn' ><SearchOutlined /><p>Search</p> </Link>
+                
+                <div 
+                    className='btn' 
+                    onClick={handleSearch} 
+                    style={{cursor: 'pointer'}} 
+                >
+                    <SearchOutlined />
+                    <p>Search</p> 
+                </div>
             </div>
         </>
     );
 }
 
 export default SearchForm;
-

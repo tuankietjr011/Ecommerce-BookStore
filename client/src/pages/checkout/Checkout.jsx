@@ -73,17 +73,17 @@ export default function Checkout() {
           <div className="product_ship_info">
             <div className="product_info">
               <div className="title">
-                ITEMS
+                Mặt hàng
               </div>
               <table className="product_table">
                 <tbody>
                   <tr>
-                    <th className='num-cart'>NUM</th>
-                    <th className='product_th'>PRODUCT</th>
-                    <th className='price_th'>PRICE</th>
-                    <th className='quantity_th'>QUANTITY</th>
-                    <th className='price_th'>TOTAL PRICE</th>
-                    <th className='remove_th'>REMOVE</th>
+                    <th className='num-cart'>Số</th>
+                    <th className='product_th'>Sản phẩm</th>
+                    <th className='price_th'>Giá</th>
+                    <th className='quantity_th'>Số lượng</th>
+                    <th className='price_th'>Tổng giá</th>
+                    <th className='remove_th'>Xoá</th>
                   </tr>
                   {cartItems.map((item, index) => (
                     <tr className='item-cart' key={index}>
@@ -117,37 +117,37 @@ export default function Checkout() {
                 </tbody>
               </table>
             </div>
-            <div className='clear_button' onClick={() => dispatch(clearCart())}><ClearOutlined style={{ fontSize: '2rem', marginRight: '10px' }} />CLEAR CART</div>
+            <div className='clear_button' onClick={() => dispatch(clearCart())}><ClearOutlined style={{ fontSize: '2rem', marginRight: '10px' }} />Xoá</div>
           </div>
           <div className="checkout_infor">
             <div className="ship_info">
               <div className="title">
-                SHIPPING ADDRESS & TOTAL
+                ĐỊA CHỈ GIAO HÀNG & TỔNG CỘNG
               </div>
               <Form className='shipping_form'>
-                <input type="text" className="fullname" placeholder='Name' onChange={(e) => setName(e.target.value)} />
+                <input type="text" className="fullname" placeholder='Tên' onChange={(e) => setName(e.target.value)} />
                 <input type="text" className="email" placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
-                <input type="text" className="Telephone" placeholder='Telephone' onChange={(e) => setPhone(e.target.value)} />
-                <input type="text" className="address" placeholder="Address" onChange={(e) => setAddress(e.target.value)} />
+                <input type="text" className="Telephone" placeholder='Số điện thoại' onChange={(e) => setPhone(e.target.value)} />
+                <input type="text" className="address" placeholder="Địa chỉ" onChange={(e) => setAddress(e.target.value)} />
               </Form>
             </div>
             <table className="checkout_info_table">
               <tbody>
                 <tr>
-                  <th>MRP:</th>
+                  <th>Phí Sách:</th>
                   <td>${amountTotal}</td>
                 </tr>
                 <tr>
-                  <th>Sub-Total</th>
+                  <th>Tổng phụ</th>
                   <td>${amountTotal}</td>
                 </tr>
                 <tr className='last_row'>
-                  <th>Total:</th>
+                  <th>Tổng:</th>
                   <td>${amountTotal}</td>
                 </tr>
               </tbody>
             </table>
-            <div className='checkout_button' onClick={handleCheckout}>CHECKOUT</div>
+            <div className='checkout_button' onClick={handleCheckout}>Thanh toán</div>
           </div>
         </div>
       </div>

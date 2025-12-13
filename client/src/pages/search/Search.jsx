@@ -64,7 +64,7 @@ function Search() {
     const dispatch = useDispatch();
 
     const [selected, setSelected] = useState("all");
-    const [changeFilter, setChangeFilter] = useState([5, 50]);
+    const [changeFilter, setChangeFilter] = useState([0, 100]);
     const [valueSort, setValueSort] = useState(0);
 
     const handleSelect = (option) => {
@@ -180,8 +180,14 @@ function Search() {
                             <div className='filter'>
                                 Lọc giá: ${changeFilter[0]} - ${changeFilter[1]}
                                 <br /><br />
-                                <Slider range defaultValue={changeFilter} onChange={(e) => setChangeFilter(e)} />
-                                {/* <div className='ResetBtn'>Reset</div> */}
+<Slider 
+    range 
+    min={0}
+    max={100}            
+    step={1}               
+    value={changeFilter}   
+    onChange={(e) => setChangeFilter(e)} 
+/>                                {/* <div className='ResetBtn'>Reset</div> */}
                             </div>
                         </div>
                     </div>
